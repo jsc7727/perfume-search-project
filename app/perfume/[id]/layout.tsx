@@ -2,7 +2,11 @@ import { Perfume } from '@/types';
 import { getPerfumeList } from '@/utils/supabase/getPerfumeList';
 import React from 'react';
 
+export const dynamic = 'auto';
+export const dynamicParams = true;
 export const revalidate = 1;
+export const fetchCache = 'force-no-store';
+export const runtime = 'nodejs';
 
 export async function generateStaticParams() {
   const perfumeListData = await getPerfumeList();
