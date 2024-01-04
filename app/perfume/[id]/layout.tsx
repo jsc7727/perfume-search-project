@@ -6,7 +6,6 @@ export const dynamic = 'auto';
 export const dynamicParams = true;
 export const revalidate = 1;
 export const fetchCache = 'force-no-store';
-export const runtime = 'nodejs';
 
 export async function generateStaticParams() {
   const perfumeListData = await getPerfumeList();
