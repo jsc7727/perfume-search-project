@@ -6,7 +6,7 @@ export const revalidate = 1;
 
 export async function generateStaticParams() {
   const perfumeListData = await getPerfumeList();
-
+  console.log('perfumeListData', perfumeListData);
   return perfumeListData.map((perfume: Perfume) => ({ id: String(perfume.id) }));
 }
 
