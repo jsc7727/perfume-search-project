@@ -1,6 +1,6 @@
 import Asdf from './Asdf';
 
-export const revalidate = 900;
+export const revalidate = 1;
 
 function Home() {
   return <Asdf />;
