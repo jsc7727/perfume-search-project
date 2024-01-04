@@ -10,7 +10,7 @@ import FilterMenuModal from '@/components/home/FilterMenuModal';
 import { useSearchParams } from 'next/navigation';
 import Loading from '@/components/common/Loading';
 
-export const revalidate = 1;
+export const revalidate = 900;
 
 function Home() {
   const searchParams = useSearchParams();
